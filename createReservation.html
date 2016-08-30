@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <title> Hotel Management System </title>
+</head>
+<body>
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="home.html">HMS</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reservations <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="createReservation.html">Create<span class="sr-only">(current)</span></a></li>
+                    <li><a href="updateReservation.html">Update</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accounts <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="modifyRoomDetails.html">Change Room Details</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="col-md-4">
+ <h1> Create a reservation </h1>
+        </div>
+
+
+<!-- <small class="text-muted">We'll never share your email with anyone else.</small> -->
+
+<div class="col-md-8">
+          <form>
+          <fieldset class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="firstName" class="form-control" id="firstName" placeholder="Enter first name">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="lastName" class="form-control" id="lastName" placeholder="Enter last name">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="noOfAdults">No of Adults</label>
+            <select class="form-control" id="selectAdults">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="noOfChildren">No of Children</label>
+            <select class="form-control" id="selectChildren">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="roomPackage">Select a Package</label>
+            <select multiple class="form-control" id="roomPackage">
+              <option>1. King size package</option>
+              <option>2. Queen size package</option>
+              <option>3. Double size package</option>
+              <option>4. Single size package</option>
+              <option>5. Family Friendly package</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="specialRequests">Any special requests?</label>
+            <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+          </fieldset>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> I agree to the terms and conditions
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+      </div>
+
+</html>

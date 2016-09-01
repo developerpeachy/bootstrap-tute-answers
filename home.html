@@ -1,135 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--start of your HTML page  -->
+<!--start of your head tag -->
 <head>
+  <!-- line 5: a 'metaport' link which allows the website to look nice on the mobile phone screen -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- line 7: a link that connects the bootstrap styling to the website.  -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <title> Gold Coast Hotel </title>
+  <title> Insert your title here! </title>
+
+  <!-- style me up!  -->
+  <style>
+  	.jumbotron {
+    background-color: #4d79ff; /* Blue */
+    color: #ffffff;
+    padding: 100px 25px;
+	}
+
+	.bg-grey {
+      background-color: #f6f6f6;
+  	}
+
+  	.bg-skyblue {
+      background-color: #ccd6ff;
+  	}
+	.navbar {
+    margin-bottom: 0;
+    background-color: #4d79ff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+	}
+
+	.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+	}
+
+	.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #e6ecff !important;
+    background-color: #fff !important;
+	}
+
+	.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+	}
+
+	.container-fluid {
+    padding: 60px 50px;
+	}
+
+	.logo {
+    font-size: 200px;
+    color: #4d76ff;
+	}
+	@media screen and (max-width: 768px) {
+	    .col-sm-4 {
+	        text-align: center;
+	        margin: 25px 0;
+	    }
+	}
+
+	.logo-small {
+    color: #4d76ff;
+    font-size: 50px;
+	}
+
+	.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+	}
+
+	.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+	}
+
+	footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #4d79ff;
+}
+  </style>
+  <!--end that style tag yo! -->
 </head>
+<!--end of your head tag -->
 <body>
-  <!-- header -->
-  <!-- original -->
-  <div class="container">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">HMS</a>
-            </div>
+  <!-- enter your HTML code here! -->
+  <!-- start navigation -->
+  	<div class="container">
+    	<nav class="navbar navbar-default navbar-fixed-top">
+      		<div class="container">
+		        <div class="navbar-header">
+		          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="#">Holiday</a>
+		        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-default" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="home.html">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reservations <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="createReservation.html">Create</a></li>
-                    <li><a href="updateReservation.html">Update</a></li>
-                  </ul>
-                </li>
-              </ul>
+		        <div class="collapse navbar-collapse" id="myNavbar">
+	          		<ul class="nav navbar-nav navbar-right">
+	              		<li><a href="#about">ABOUT</a></li>
+	              		<li><a href="#services">SERVICES</a></li>
+	              		<li><a href="#about">PLACES TO GO</a></li>
+	              		<li><a href="#services">CONTACT</a></li>
+	          		</ul>
+	     		</div>
+	     	</div>
+    	</nav>
+ 	</div>
+  <!-- end navigation -->
+  <!-- start jumbotron -->
+  <div class="jumbotron text-center">
+  	<h1>Traveller</h1>
+  	<p>We specialize in travelling!</p>
+  	<form class="form-inline">
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-default">Subscribe</button>
+  </form>
+  </div>
+  <!-- end jumbotron -->
+  <!-- start about us -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2>
+      <h4>Lorem ipsum..</h4>
+      <p>Lorem ipsum..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <button class="btn btn-default btn-lg">Learn More</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
 
-              <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Accounts <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="login.html">Log In</a></li>
-                    <li><a href="modifyRoomDetails.html">Change Room Details</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h4>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  </div>
+</div>
 
-        <div class ="jumbotron">
-          <div class="container">
-            <h1> Rosie's Resort! </h1>
-            <p> We specialise in the best holiday accomodation possible! </p>
-          </div>
+  <!-- end about us -->
+  <!-- start services -->
+<div class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..Lorem ipsum dolor sit amet..Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+    </div>
+  </div>
+</div>
+  <!-- end services -->
+  <!-- places to visit -->
+<div class="container-fluid text-center bg-grey">
+  <h2>Places to Go!</h2>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+</div>
+  <!--end places to go  -->
+  <!--Contact starts -->
+  <div class="container-fluid bg-skyblue">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
-              </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--contact ends here! -->
+<!-- footer -->
 
-
-
-
-<div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="https://pixabay.com/static/uploads/photo/2015/07/05/13/44/beach-832346_960_720.jpg" alt="...">
-              <div class="caption text-center">
-                <h3>Relax on at a nice beach house</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Book Now!</a> </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="https://pixabay.com/static/uploads/photo/2016/01/30/02/22/people-1169019_960_720.jpg" alt="...">
-              <div class="caption text-center">
-                <h3>Plenty of festivals and things to do!</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Learn more Now!</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="https://pixabay.com/static/uploads/photo/2015/09/02/13/10/pineapples-918921_960_720.jpg" alt="...">
-              <div class="caption text-center">
-                <h3>Tropical fresh paradise everywhere you go!</h3>
-                <p>...</p>
-                <p><a href="#" class="btn btn-primary" role="button">Explore more!</a></p>
-              </div>
-            </div>
-          </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img src="https://pixabay.com/static/uploads/photo/2015/07/05/13/44/beach-832346_960_720.jpg" alt="...">
-                    <div class="caption text-center">
-                      <h3>Relax on at a nice beach house</h3>
-                      <p>...</p>
-                      <p><a href="#" class="btn btn-primary" role="button">Book Now!</a> </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6  col-md-4">
-                  <div class="thumbnail">
-                    <img src="https://pixabay.com/static/uploads/photo/2016/01/30/02/22/people-1169019_960_720.jpg" alt="...">
-                    <div class="caption text-center">
-                      <h3>Plenty of festivals and things to do!</h3>
-                      <p>...</p>
-                      <p><a href="#" class="btn btn-primary" role="button">Learn more Now!</a></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="thumbnail">
-                    <img src="https://pixabay.com/static/uploads/photo/2015/09/02/13/10/pineapples-918921_960_720.jpg" alt="...">
-                    <div class="caption text-center">
-                      <h3>Tropical fresh paradise everywhere you go!</h3>
-                      <p>...</p>
-                      <p><a href="#" class="btn btn-primary" role="button">Explore more!</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Traveller @developerpeachy</p>
+</footer>
+<!-- end footer -->
+  <!-- end your html code here! -->
 </body>
-<footer></footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </html>
